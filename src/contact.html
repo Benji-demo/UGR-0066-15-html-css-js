@@ -6,6 +6,72 @@
     <title>Contacts</title>
 </head>
 <body>
-    
+    <header>
+        <a href="home.html">
+            <img class="logo" src="#" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Contacts</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deleniti, voluptate ea necessitatibus repellendus, facere accusantium perferendis minima recusandae impedit commodi consequatur sunt sit, aliquam velit? Exercitationem natus laboriosam deleniti!</p>
+
+        <div>
+            <ul>
+                <li><img src="/src/images/telegram-icon.png" height="30px" alt="Telegram Icon"> Telegram</li>
+                <li><img src="/src/images/mail-icon.png" height="30px" alt="Email Icon"> Email</li>
+                <li><img src="/src/images/github-icon.png" height="30px" alt="Github Icon"> Github</li>
+            </ul>
+        </div>
+
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+
+            <form>
+                <p><label for="name">Name</label>
+                <input name="name" type="text" id="name" placeholder="Enter your name" required></p>
+
+                <p><label for="email">Email</label>
+                <input name="email" type="email" id="email" placeholder="Enter your email" required></p>
+
+                <p><label for="message">Message</label></p>
+                <textarea name="message" id="message" placeholder="Write your message" maxlength=1000 required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <a href="home.html" class="logo-link">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80px" alt="logo">
+        </a>
+        <div id="footer-contacts">
+            <ul>
+                <li><img class="icon" src="/src/images/telegram-icon.png" height="30px" alt="Telegram Icon"> Telegram</li>
+                <li><img class="icon" src="/src/images/mail-icon.png" height="30px" alt="Email Icon"> Email</li>
+                <li><img class="icon" src="/src/images/github-icon.png" height="30px" alt="Github Icon"> Github</li>
+            </ul>
+        </div>
+        <div>
+            <p>sitemap</p>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
