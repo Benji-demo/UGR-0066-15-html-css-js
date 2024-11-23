@@ -6,20 +6,19 @@
     <title>Contacts</title>
 </head>
 <body>
-    <header>
-        <a href="home.html">
-            <img class="logo" src="#" alt="logo">
+    <header class="header">
+        <a href="home.html" class="logo-link">
+            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
         </a>
-        <nav>
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
+                <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
+                <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
+                <li class="header-nav-list-item"><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
-
 
     <main>
         <h1>Contacts</h1>
@@ -35,41 +34,36 @@
 
         <section id="contact-form">
             <h2>Contact Form</h2>
-
             <form>
                 <p><label for="name">Name</label>
                 <input name="name" type="text" id="name" placeholder="Enter your name" required></p>
-
                 <p><label for="email">Email</label>
                 <input name="email" type="email" id="email" placeholder="Enter your email" required></p>
-
                 <p><label for="message">Message</label></p>
                 <textarea name="message" id="message" placeholder="Write your message" maxlength=1000 required></textarea>
-
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
 
-
     <footer>
         <a href="home.html" class="logo-link">
-            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80px" alt="logo">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
         </a>
-        <div id="footer-contacts">
-            <ul>
-                <li><img class="icon" src="/src/images/telegram-icon.png" height="30px" alt="Telegram Icon"> Telegram</li>
-                <li><img class="icon" src="/src/images/mail-icon.png" height="30px" alt="Email Icon"> Email</li>
-                <li><img class="icon" src="/src/images/github-icon.png" height="30px" alt="Github Icon"> Github</li>
+        <div class="footer-section">
+            <ul class="footer-contacts">
+                <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
+                <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a> </li>
+                <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a> </li>
             </ul>
         </div>
-        <div>
-            <p>sitemap</p>
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+        <div class="footer-nav">
+            <p class="footer-nav-title">Sitemap</p>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-list-item"><a href="profile.html">Profile</a></li>
+                <li class="footer-nav-list-item"><a href="projects.html">Projects</a></li>
+                <li class="footer-nav-list-item"><a href="blog.html">Blogs</a></li>
+                <li class="footer-nav-list-item"><a href="contact.html">Contacts</a></li>
             </ul>
         </div>
     </footer>
