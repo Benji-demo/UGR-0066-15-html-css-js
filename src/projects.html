@@ -6,62 +6,76 @@
     <title>Projects</title>
 </head>
 <body>
-    <header>
-        <a href="home.html">
-            <img class="logo" src="#" alt="logo">
+    <header class="header">
+        <a href="home.html" class="logo-link">
+            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
         </a>
-        <nav>
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
+                <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
+                <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
+                <li class="header-nav-list-item"><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <h1>Projects</h1>
-        <article>
-            <img src="#" alt="Project Image">
-            <h2>Project Title 1</h2>
-            <p>Short description of the project...</p>
-            <p>Tags: <span>#web</span> <span>#development</span></p>
-        </article>
-        <article>
-            <img src="#" alt="Project Image">
-            <h2>Project Title 2</h2>
-            <p>Short description of the project...</p>
-            <p>Tags: <span>#Tag</span> <span>#Tag</span></p>
-        </article>
-        <article>
-            <img src="#" alt="Project Image">
-            <h2>Project Title 3</h2>
-            <p>Short description of the project...</p>
-            <p>Tags: <span>#Tag</span> <span>#Tag</span></p>
-        </article>
-        <article>
-            <img src="#" alt="Project Image">
-            <h2>Project Title 4</h2>
-            <p>Short description of the project...</p>
-            <p>Tags: <span>#Tag</span> <span>#Tag</span></p>
-        </article>
+
+        <div class="project-card" id="Image-to-icon">
+            <a href="projects/Img-to-ico.zip" download title="Download Image-to-icon Zip File"><h2 class="project-title">Image-to-icon</h2></a>
+            <p class="project-description">This project converts image files into icons. It was inspired by my need to organize movie images into icons. 
+                When online services imposed limitations on free conversions, I created this Python-based solution using the PIL library to automate the process. </p>
+                <p class="project-tag">Tags: <span>#Script</span> <span>#Python</span> <span>#PIL</span></p>
+            <a href="projects/Img-to-ico.zip" download title="Download Image-to-icon Zip File"><img src="images/ico_converter.jpg" alt="To Ico converter image" height="200"></a>
+        </div>
+        
+        <div class="project-card" id="Topup-from-image">
+            <a href="projects/Topup-from-image.zip" download title="Download Topup from image Zip File"><h2 class="project-title">Topup from image</h2></a>
+            <p class="project-description">This project uses OCR (Optical Character Recognition) to read and extract numeric information from an image, enabling users to top up their accounts automatically. Built with Tkinter, PyAutoGUI, and PyTesseract, it simplifies dialing card numbers directly from the script. If connected to your device via USB with debugging enabled, it uses ADB to handle automation.</p>
+            <p class="project-tag">Tags: <span>#Script</span> <span>#Python</span> <span>#PyTesseract(OCR)</span> <span>#PyAutoGUI</span> <span>#ADB</span></p>
+            <a href="projects/Topup-from-image.zip" download title="Download Topup from image Zip File"><img src="images/topup_img.jpg" alt="Topup prject cover" height="200"></a>
+        </div>
+
+        <div class="project-card">
+            <a href="Videos/Day-024.mp4" target="_blank">
+                <h2 class="project-title">Drawing Time-elapse</h2>
+            </a>
+            <p class="project-description">Time-Elapse of a mecha drawing.</p>
+            <p class="project-tag">Tags: <span>#Drawing</span> <span>#Digital</span></p>
+            <a href="Videos/Day-024.mp4" target="_blank" class="video-link">
+                <img src="/src/images/day-024-thumbnail.png" alt="Video Thumbnail" height="300">
+                <div class="play-icon">&#9658;</div>
+            </a>
+        </div>
+
+        <div class="project-card" id="old_sage">
+            <h2 class="project-title">Drawing: Old Sage</h2>
+            <p class="project-description">A drawing that I am proud of.</p>
+            <p class="project-tag">Tags: <span>#Drawing</span> <span>#Digital</span> <span>#Old_Sage</span></p>
+            <img src="images/old_sage.jpg" alt="Old Sage Drawing" height="400">
+        </div>
     </main>
+
     <footer>
-        <img class="logo" src="#" alt="logo">
-        <div id="footer-contacts">
-            <ul>
-                <li><img src="path/to/email-icon.png" alt="Email Icon"> Email</li>
-                <li><img src="path/to/telegram-icon.png" alt="Telegram Icon"> Telegram</li>
-                <li><img src="path/to/github-icon.png" alt="Github Icon"> Github</li>
+        <a href="home.html" class="logo-link">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+        </a>
+        <div class="footer-section">
+            <ul class="footer-contacts">
+                <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
+                <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a> </li>
+                <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a> </li>
             </ul>
         </div>
-        <div>
-            <p>sitemap</p>
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+        <div class="footer-nav">
+            <p class="footer-nav-title">Sitemap</p>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-list-item"><a href="profile.html">Profile</a></li>
+                <li class="footer-nav-list-item"><a href="projects.html">Projects</a></li>
+                <li class="footer-nav-list-item"><a href="blog.html">Blogs</a></li>
+                <li class="footer-nav-list-item"><a href="contact.html">Contacts</a></li>
             </ul>
         </div>
     </footer>

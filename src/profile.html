@@ -5,59 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
+
 <body>
-    <header>
-        <a href="home.html">
-            <img class="logo" src="#" alt="logo">
+    <header class="header">
+        <a href="home.html" class="logo-link">
+            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
         </a>
-        <nav>
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
+                <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
+                <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
+                <li class="header-nav-list-item"><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h2>Binyam</h2>
-        <p>description</p>
-        <img src="#" alt="Profile-picture">
-        <section>
-            <h2>hobbies</h2>
-            <ul>
-                <li>hobby 1</li>
-                <li>hobby 2</li>
-                <li>hobby 3</li>
+        <section class="prifile-intro">
+            <h2>Binyam</h2>
+            <p>Hello! I'm Binyam, a software engineering student with some creative side. I enjoy blending technology with art and creating scripts that make life easier.</p>
+            <img class="profile-picture" src="/src/images/img1.jpg" width="400" alt="Profile picture">
+        </section>
+
+        <section class="prfile-hobbies">
+            <h2>Hobbies</h2>
+            <ul class="hobbies-list">
+                <li class="hobbies-list-item">Drawing</li>
+                <li class="hobbies-list-item">Writing scripts</li>
+                <li class="hobbies-list-item">Animating</li>
             </ul>
         </section>
-        <section>
+
+        <section class="about-me">
             <h2>A bit about me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit soluta dolore molestias exercitationem at, assumenda quam maiores, labore minus accusantium dolorem atque similique reprehenderit, maxime inventore numquam tempora odit fugiat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit in minima expedita tenetur animi libero est ipsum enim voluptatem itaque, tempore illum eveniet, veritatis explicabo architecto ipsa velit aut voluptatum?</p>
+            <p>I am a curious individual who loves exploring new technologies and applying them creatively. My journey in software engineering has been an exciting blend of technical learning and artistic expression. I believe that good design and functional technology go hand in hand.</p>
+            <p>Outside of coding, I spend time bringing ideas to life through drawing and animation, often merging these interests to visualize concepts and projects more effectively. Problem-solving and continuous learning are my driving forces.</p>
         </section>
-        <section>
-            <h1>Download CV</h1>
-            <p>Intro if you want to dload it here you go</p>
-            <button>Download</button>
+
+        <section class="download-resume">
+            <h1>Download resume</h1>
+            <p>If you'd like to learn more about my professional journey and skills, feel free to download my resume below.</p>
+            <a href="resume/resume.pdf" download title="Download resume" class="button">Download</a>
         </section>
     </main>
+
     <footer>
-        <img class="logo" src="#" alt="logo">
-        <div id="footer-contacts">
-            <ul>
-                <li><img src="path/to/email-icon.png" alt="Email Icon"> Email</li>
-                <li><img src="path/to/telegram-icon.png" alt="Telegram Icon"> Telegram</li>
-                <li><img src="path/to/github-icon.png" alt="Github Icon"> Github</li>
+        <a href="home.html" class="logo-link">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+        </a>
+        <div class="footer-section">
+            <ul class="footer-contacts">
+                <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
+                <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a> </li>
+                <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a> </li>
             </ul>
         </div>
-        <div>
-            <p>sitemap</p>
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+        <div class="footer-nav">
+            <p class="footer-nav-title">Sitemap</p>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-list-item"><a href="profile.html">Profile</a></li>
+                <li class="footer-nav-list-item"><a href="projects.html">Projects</a></li>
+                <li class="footer-nav-list-item"><a href="blog.html">Blogs</a></li>
+                <li class="footer-nav-list-item"><a href="contact.html">Contacts</a></li>
             </ul>
         </div>
     </footer>
