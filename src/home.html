@@ -3,91 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Portfolio - Binyam Mezemir</title>
 </head>
 <body>
-    <header class="header">
-        <a href="home.html" class="logo-link">
-            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
-        </a>
-        <nav class="header-nav">
-            <ul class="header-nav-list">
-                <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
-                <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
-                <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
-                <li class="header-nav-list-item"><a href="contact.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="home-bg-image">
+        <header class="header">
+            <div class="logo-container">
+                <a href="home.html" class="logo-container" >
+                    <img class="logo header-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
+                    <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
+                    <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
+                    <li class="header-nav-list-item"><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
         <section class="hero-section">
-            <h1 class="hero-title">Welcome to My Portfolio</h1>
-            <p class="hero-description">Hi, I'm Binyam (Benji), a Software Engineering student. I also explore creative fields like drawing and animation. Dive in and learn more about me.</p>
-            <img id="hero-bg-image" src="/src/images/img4-lighter.jpg" width="600"  alt="Background image">
-        </section>
+                <h1 class="hero-title">Welcome to My Portfolio</h1>
+                <p class="hero-description big-text">Hi, I'm Binyam (Benji), a Software Engineering student. I also explore creative fields like drawing and animation. Dive in and learn more about me.</p>
+            </section>
+    </div>
+    
+        <main>
         <section class="profile-section">
             <img class="profile-picture" src="/src/images/img1.jpg" width="400" alt="Profile picture">
-            <h1 class="profile-name">Binyam Mezemir</h1>
-            <p class="profile-description">Software Engineering Student | Aspiring Creator</p>
+            <div class="profile-section-discription">
+                <h1 class="profile-name title">Binyam Mezemir</h1>
+                <p class="profile-description big-text">Software Engineering Student | Aspiring Creator</p>
+            </div>
         </section>
 
         <section class="projects-section">
-            <h1 class="project-section-title">Projects</h1>
-            <div class="project-card">
-                <a href="projects.html#Image-to-icon"><h2 class="project-title">Image-to-icon</h2></a>
-                <p class="project-description">This project converts image files into icons. It was inspired by my need to organize movie images into icons.</p>
-                <a href="projects.html#Image-to-icon"><img src="images/ico_converter.jpg" alt="To Ico converter image" height="200"></a>
-            </div>
+            <h1 class="project-section-title title">Projects</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <a href="projects.html#Image-to-icon"><img class="round-border" src="images/ico_converter.jpg" alt="To Ico converter image" height="200"></a>
+                    <p class="project-description">Image-to-icon: This project converts image files into icons. It was inspired by my need to organize movie images into icons.</p>
+                </div>
 
-            <div class="project-card">
-                <a href="projects.html#Topup-from-image"><h2 class="project-title">Topup from image</h2></a>
-                <p class="project-description">This project uses OCR to read and extract numeric information from an image, enabling users to top up their accounts...</p>
-                <a href="projects.html#Topup-from-image"><img src="images/topup_img.jpg" alt="Topup prject cover" height="200"></a>
-            </div>
-
-            <div class="project-card">
-                <a href="projects.html#old_sage"><h2 class="project-title">Drawing: Old Sage</h2></a>
-                <p class="project-description">A drawing that I am proud of.</p>
-                <a href="projects.html#old_sage"><img src="images/old_sage.jpg" alt="Old Sage Drawing" height="400"></a>
+                <div class="project-card">
+                    <a href="projects.html#old_sage"><img class="round-border" src="images/old_sage.png" alt="Old Sage Drawing" height="400"></a>
+                    <p class="project-description">Drawing - Old Sage: A drawing that I am proud of.</p>
+                </div>
+    
+                <div class="project-card">
+                    <a href="projects.html#Topup-from-image"><img class="round-border" src="images/topup_img.jpg" alt="Topup prject cover" height="200"></a>
+                    <p class="project-description">Topup from image: This project uses OCR to read and extract numeric information from an image, enabling users to top up their accounts...</p>
+                </div>
             </div>
         </section>
 
         <section class="blogs-section">
-            <h2 class="blogs-section-title">Blogs</h2>
-            <div class="blog">
-                <a href="blog.html#blog3"><h2 class="blog-title">Don’t Stress</h2></a>
-                <p class="blog-content">I don’t understand why some people overstress. Look back at the things that used to feel so intense, and now...</p>
-            </div>
-            <div class="blog">
-                <a href="blog.html#blog2"><h2 class="blog-title">Rant #1</h2></a>
-                <p class="blog-content">Sometimes I really think we’re not using all the tools we have available. Come on, let’s be real—anyone can go online and learn most skills, then make a living. Yet we still...</p>
-            </div>
-            <div class="blog">
-                <a href="blog.html#blog1"><h2 class="blog-title">Why I Love Python</h2></a>
-                <p class="blog-content">It’s not like I’ve tried most programming languages, but I like Python the most from the ones I’ve tried. Of course, the reason is that I can do almost everything...</p>
+            <h2 class="blogs-section-title title">Blogs</h2>
+            <div class="blogs-container">
+                <div class="blog">
+                    <a href="blog.html#blog3"><h2 class="blog-title h2">Don’t Stress</h2></a>
+                    <p class="blog-content">I don’t understand why some people overstress. Look back at the things  that used to feel so intense, and now they’re just memories. Think about this: the things that make you stressed right now will also pass, just  like the ones that came before. Focus on the present, and...</p>
+                </div>
+                <div class="blog">
+                    <a href="blog.html#blog2"><h2 class="blog-title h2">Rant #1</h2></a>
+                    <p class="blog-content">Sometimes I really think we’re not using all the tools we have  available. Come on, let’s be real—anyone can go online and learn most  skills, then make a living. Yet we still insist on sticking to the  default path of going to schools. Don’t get me wrong...</p>
+                </div>
+                <div class="blog">
+                    <a href="blog.html#blog1"><h2 class="blog-title h2">Why I Love Python</h2></a>
+                    <p class="blog-content">It’s not like I’ve tried most programming languages, but I like Python  the most from the ones I’ve tried. Of course, the reason is that I can  do almost everything I need with Python. I usually write scripts for  tasks that are bothersome, and so far, I’ve been able to accomplish  nearly...</p>
+                </div>
             </div>
         </section>
     </main>
     
     <footer>
         <a href="home.html" class="logo-link">
-            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="100" alt="logo">
         </a>
-        <div class="footer-section">
-            <ul class="footer-contacts">
-                <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
-                <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a> </li>
-                <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a> </li>
-            </ul>
-        </div>
-        <div class="footer-nav">
-            <p class="footer-nav-title">Sitemap</p>
-            <ul class="footer-nav-list">
-                <li class="footer-nav-list-item"><a href="profile.html">Profile</a></li>
-                <li class="footer-nav-list-item"><a href="projects.html">Projects</a></li>
-                <li class="footer-nav-list-item"><a href="blog.html">Blogs</a></li>
-                <li class="footer-nav-list-item"><a href="contact.html">Contacts</a></li>
-            </ul>
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul class="footer-contacts">
+                    <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a class="big-text" href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
+                    <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a class="big-text" href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a> </li>
+                    <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a class="big-text" href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a> </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-nav-title h2">Sitemap</p>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item big-text"><a href="profile.html">Profile</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="projects.html">Projects</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="blog.html">Blogs</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

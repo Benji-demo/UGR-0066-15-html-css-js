@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    background-color: #F2F2F2;
+}
+/* 
+.font-normal { 
+    font-family: "sans-serif"; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #090; 
+    text-align: center; 
+    font-style: normal; 
+    font-variant: normal; 
+} */
+
+/* reusables */
+.title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.big-text {
+    font-size: 1.3rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.round-border{
+    border-radius: 10px;
+}
+
+.remove-list-style {
+    list-style: none;
+}
+
+
+
+
+
+
+.home-bg-image { 
+    background-image: url("/src/images/img4-gray.jpg");
+    background-size: cover; 
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    width: 100%; 
+}
+
+/* header is made flex here and it has a link and the list */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100vw;
+}
+
+.logo-container {
+    flex: 0 0 70vw;
+}
+
+.logo-link{
+    display: inline-flex;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Takes remaining space for nav - link took most space*/
+.header-nav {
+    flex: 1;
+}
+
+/* Nav list item links */
+.header-nav-list {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.header-nav-list-item a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s; /* Hover effect */
+}
+
+.header-nav-list-item a:hover {
+    color: #4d4d4d; 
+}
+
+
+.hero-section {
+    display: flex; /* Centers content vertically and horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centers text */
+    color: #262626; /* Text color for contrast */
+    padding: 220px 20px 200px; /* Optional spacing */
+    margin-left: 30vw;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.projects-section {
+    background-color: #737373;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align:start;
+    padding: 20px;
+}
+
+.project-card{
+    padding: 30px;
+}
+.project-card img {
+    width: 100%;
+    height: auto;    
+}
+
+.blogs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align:start;
+    padding: 0 50px 0 80px;
+}
+
+.blog {
+    padding: 40px;
+    width: 600px;
+}
+
+.blog a{
+    text-decoration: none;
+    color:#262626
+}
+
+footer{
+    background-color: #4D4D4D;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.footer-content{
+
+}
+
+.footer-nav{
+
+}
