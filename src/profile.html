@@ -9,9 +9,11 @@
 
 <body>
     <header class="header">
-        <a href="home.html" class="logo-link">
-            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
-        </a>
+        <div class="logo-container">
+            <a href="home.html" class="logo-container" >
+                <img class="logo header-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            </a>
+        </div>
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
@@ -23,31 +25,35 @@
     </header>
 
     <main>
-        <section class="prifile-intro">
-            <h2>Binyam</h2>
-            <p>Hello! I'm Binyam, a software engineering student with some creative side. I enjoy blending technology with art and creating scripts that make life easier.</p>
-            <img class="profile-picture" src="/src/images/img1.jpg" width="400" alt="Profile picture">
+        <section class="profile-intro">
+            <img class="profile-picture" src="/src/images/img1.jpg" width="300" alt="Profile picture">
+            <div class="profile-content">
+                <h2 class="title">Binyam Mezemir</h2>
+                <p>Hello! I'm Binyam, a software engineering student with some creative side. I enjoy blending technology with art and creating scripts that make life easier.</p>
+            </div>
         </section>
 
-        <section class="prfile-hobbies">
-            <h2>Hobbies</h2>
-            <ul class="hobbies-list">
-                <li class="hobbies-list-item">Drawing</li>
-                <li class="hobbies-list-item">Writing scripts</li>
-                <li class="hobbies-list-item">Animating</li>
-            </ul>
-        </section>
+            <div class="profile-body">
+                <section class="about-me container-5">
+                    <h2 class="h2">A bit about me</h2>
+                    <p>I am a curious individual who loves exploring new technologies and applying them creatively. My journey in software engineering has been an exciting blend of technical learning and artistic expression. I believe that good design and functional technology go hand in hand.</p>
+                    <p>Outside of coding, I spend time bringing ideas to life through drawing and animation, often merging these interests to visualize concepts and projects more effectively. Problem-solving and continuous learning are my driving forces.</p>
+                </section>
+                
+                <section class="profile-hobbies container-5">
+                    <h2 class="h2">Hobbies</h2>
+                    <ul class="hobbies-list">
+                        <li class="hobbies-list-item">Drawing</li>
+                        <li class="hobbies-list-item">Writing scripts</li>
+                        <li class="hobbies-list-item">Animating</li>
+                    </ul>
+                </section>
+            </div>
 
-        <section class="about-me">
-            <h2>A bit about me</h2>
-            <p>I am a curious individual who loves exploring new technologies and applying them creatively. My journey in software engineering has been an exciting blend of technical learning and artistic expression. I believe that good design and functional technology go hand in hand.</p>
-            <p>Outside of coding, I spend time bringing ideas to life through drawing and animation, often merging these interests to visualize concepts and projects more effectively. Problem-solving and continuous learning are my driving forces.</p>
-        </section>
-
-        <section class="download-resume">
-            <h1>Download resume</h1>
+        <section class="download-resume container-10">
+            <h1 class="h2">Download resume</h1>
             <p>If you'd like to learn more about my professional journey and skills, feel free to download my resume below.</p>
-            <a href="resume/resume.pdf" download title="Download resume" class="button">Download</a>
+            <a class="button" href="resume/resume.pdf" download title="Download resume" class="button">Download</a>
         </section>
     </main>
 
