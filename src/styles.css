@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     background-color: #F2F2F2;
 }
+
 /* 
 .font-normal { 
     font-family: "sans-serif"; 
@@ -204,17 +205,47 @@ footer{
 
 .footer-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 20px;
+    color: #F2F2F2;
+    gap: 26rem;
 }
 
 
-.footer-content{
-
+.footer-contacts{
+    list-style: none;
 }
 
-.footer-nav{
+.footer-contacts li {
+    margin: 0 10px;
+}
 
+.footer-contacts li div {
+    display: inline-flex;
+    width: 124px;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+.footer-contacts img {
+    width: 35px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+
+.footer-nav ul{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav li a {
+    color: #F2F2F2;
+    margin: 0 10px;
+    text-decoration: none;
 }
