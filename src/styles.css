@@ -16,28 +16,37 @@ section{
 
 .container-10{
     width:83.3vw ;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .container-8{
     width:66.67vw ;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .container-5{
     width: 41.67vw;
-    margin: auto;
+    /* margin: auto; */
     justify-content: center;
 }
 
 .container-4{
     width: 33.33vw;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .container-3{
     width: 25vw;
-    margin: auto;
+    /* margin: auto; */
+}
+
+.container-2{
+    width: 16.33vw;
+    /* margin: auto; */
+}
+
+.text-center{
+    text-align: center;
 }
 
 /* 
@@ -58,7 +67,7 @@ section{
 }
 
 .h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
@@ -343,3 +352,47 @@ footer{
 
 /* ================  projects page  ====================== */
 
+.projects{
+    margin-top: 50px;
+}
+
+.prised-proj{
+    margin: auto;
+}
+
+.prised-proj{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+.project-card img{
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.projects-content{
+    display: flex;
+    align-items: start;
+    margin-left: 8.33vw;
+    flex-wrap: wrap;
+}
+
+.project-tag{
+    display: none;
+}
+
+/* Media query for larger screens (min-width: 768px)
+@media (min-width: 768px) {
+    .tags {
+        display: block;
+    }
+} */
+
+.project-card a{
+    text-decoration: none;
+    color: #262626;
+}
+
+
+/* ================  blogs page  ====================== */
