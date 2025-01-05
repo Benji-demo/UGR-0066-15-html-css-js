@@ -235,12 +235,12 @@ section{
     padding: 0 50px 0 80px;
 }
 
-.blog {
+.blog-sample {
     padding: 40px;
     width: 600px;
 }
 
-.blog a{
+.blog-sample a{
     text-decoration: none;
     color:#262626
 }
@@ -396,3 +396,99 @@ footer{
 
 
 /* ================  blogs page  ====================== */
+
+.blog-intro{
+    display: flex;
+    margin-left: 8.33vw;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 30px;
+    justify-content: start;
+    align-items: center;
+}
+
+
+/* Style the table */
+table {
+    margin-left: 8.33vw;
+    width: 83.33vw;
+    border-collapse: collapse;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px #26262626;
+    border-radius: 12px;
+}
+
+thead tr {
+    background-color: #999999;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Style links */
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #737373;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    
+    table {
+        border: 0;
+    }   
+
+    thead {
+        font-size: 1rem;
+    }
+
+    td {
+        /* display: block; */
+        text-align: left ;
+        font-size: 0.8em;
+        border-bottom: 1px solid #dddddd;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+.blog {
+    padding: 20px;
+    width: 83.33vw;
+    margin-left: 8.33vw;
+}
+
+.blog-list article .tags{
+    padding: 20px 0;
+}
