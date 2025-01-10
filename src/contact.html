@@ -23,28 +23,84 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Contacts</h1>
-        <p>Feel free to reach out to me through any of the platforms below. Whether you have a question, collaboration idea, or just want to say hi, I'll do my best to get back to you promptly!</p>
-
+    <main class="container-10 m-auto">
+        <section class="contacts-intro">
+            <img class="profile-picture" src="/src/images/img1.jpg" width="300" alt="Profile picture">
+            <div class="contacts-content">
+                <h2 class="title">Contacts</h2>
+                <p>Feel free to reach out to me through any of the platforms below. Whether you have a question, collaboration idea, or just want to say hi, I'll do my best to get back to you promptly!</p>
+            </div>
+        </section>
+        
+        
         <section class="contact-list">
-            <h2>Contact List</h2>
-            <ul>
-                <li class="contact-list-item"><img src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
-                <li class="contact-list-item"><img src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a></li>
-                <li class="contact-list-item"><img src="/src/images/github-icon.png" height="30" alt="Github Icon"> <a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a></li>
-            </ul>
+            <h2 class="h2">Contact List</h2>
+            <section class="contact-list-container">
+                <ul>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a>
+                            
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a>
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/github-icon.png" height="30" alt="Github Icon"> <a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a>
+                        </div>
+                    </li>
+                </ul>
+                
+
+                <ul>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a>
+                            
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a>
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/github-icon.png" height="30" alt="Github Icon"> <a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a>
+                        </div>
+                    </li>
+                </ul> 
+            </section>
         </section>
 
         <section class="contact-form">
-            <h2>Contact Form</h2>
+            <h2 class="h2">Contact Form</h2>
             <form>
-                <p><label for="name">Name</label>
-                <input name="name" type="text" id="name" placeholder="Enter your name" required></p>
-                <p><label for="email">Email</label>
-                <input name="email" type="email" id="email" placeholder="Enter your email" required></p>
-                <p><label for="message">Message</label></p>
-                <textarea name="message" id="message" placeholder="Write your message" maxlength=1000 required></textarea>
+                <div class="name-email">
+                    <div class="input-group container-5">
+                        <p>
+                            <label for="name">Name</label>
+                        </p>
+                            <input name="name" type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group container-5">
+                        <p>
+                            <label for="email">Email</label>
+                        </p>
+                        <input name="email" type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-group container-10 m-auto">
+                        <p><label for="message">Message</label></p>
+                        <textarea name="message" id="message" placeholder="Write your message" maxlength=1000 required></textarea>
+                    </div>
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </section>
