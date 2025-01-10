@@ -117,6 +117,25 @@ section{
     background-color: #999999;
 }
 
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 15px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
 
 .logo-link{
     display: inline-flex;
@@ -163,6 +182,11 @@ section{
     color: #262626; /* Text color for contrast */
     padding: 220px 20px 200px; /* Optional spacing */
     margin-left: 30vw;
+}
+
+#Profile-def{
+    padding: 20px;
+    display: none;
 }
 
 .hero-title {
@@ -369,12 +393,6 @@ footer{
     display: none;
 }
 
-/* Media query for larger screens (min-width: 768px)
-@media (min-width: 768px) {
-    .tags {
-        display: block;
-    }
-} */
 
 .project-card a{
     text-decoration: none;
@@ -453,6 +471,11 @@ a:hover {
 
 
 /* ================  contact page  ====================== */
+
+#ul-1 {
+    display: none;
+}
+
 .contacts-intro {
     display: flex;
     justify-content: center;
@@ -670,28 +693,161 @@ a:hover {
 
 /* Tablet - Protrate */
 @media (max-width: 768px) {
-    /* .hero-section {
-        padding: 100px 20px;
+    .container-5{
+        width: 83.33vw;
     }
 
-    .profile-section, .projects-section, .contacts-intro {
+    
+
+    #hero-header-nav {
+        display: none; 
         flex-direction: column;
-        gap: 2rem;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: #f2f2f2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 200px;
+        z-index: 10;
     }
 
-    .projects-container, .blogs-container {
-        flex-direction: column;
+    #hero-header-nav .header-nav-list-item {
+        padding: 0.5rem 1rem;
     }
 
-    .project-card, .blogs-container div {
+    #hero-header-nav .header-nav-list-item a {
+        text-decoration: none;
+        display: block; 
         width: 100%;
     }
 
-    .footer-content {
+    #hero-header-nav .header-nav-list-item a:hover {
+        background-color: #f2f2f2;
+    }
+
+    #hero-header-nav.show {
+        display: flex;
+    }
+
+    #hero-header-nav .header-nav-list {
         flex-direction: column;
-        gap: 1rem;
-    } */
+        padding: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: flex; 
+    }
+    
+    .hero-section{
+        width: 66.64vw;
+        margin: auto;
+    }
+
+    .profile-section {
+        padding: 50px 10px;
+        gap: 2rem;
+    }
+
+
+    .blogs-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align:start;
+    }
+    
+    .blogs-container div {
+        padding: 30px;
+    }
+
+    #Profile-def{
+        display: block;
+    }
+
+    .profile-intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-content{
+        width: 83.33vw;
+    }
+
+    .profile-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download-resume{
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .download-resume .button{
+        margin-left: 0rem;
+    }
+
+    /* ================== Projects ========================== */
+    .display-flex{
+        display: flex;
+        margin: auto;
+        width: 83.33vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .project-card{
+        width: 43.1vw;
+    }
+
+    .blog-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .blog {
+        padding: 20px;
+        width: 83.33vw;
+    }
+
+    .contacts-content{
+        text-align: start;
+    }
+
+    .contacts-content h2{
+        text-align: center;
+    }
+
+    #ul-2, #ul-3 {
+        display: none;
+    }
+
+    #ul-1 {
+        display: flex;
+        list-style: none ;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* Phone - Portrait  */
     @media (max-width: 390px) {
