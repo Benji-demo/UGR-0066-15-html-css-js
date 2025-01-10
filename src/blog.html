@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Blogs</title>
 </head>
 <body>
-    <header class="header">
-        <a href="home.html" class="logo-link">
-            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
-        </a>
-        <nav class="header-nav">
+    <header class="container-12 header">
+        <div class="container-7">
+            <a href="home.html" class="logo-container" >
+                <img class="logo header-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            </a>
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="header-nav container-5 m-auto">
             <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="home.html">Home</a></li>
                 <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
                 <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
                 <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
@@ -21,8 +30,11 @@
     </header>
 
     <main>
-        <h1>Blogs</h1>
-        <p>Welcome to my blog section! Here, I share thoughts and occasional rants about life, and something in between. Dive in and enjoy!</p>
+        <div class="blog-intro">
+            <h1>Blogs</h1>
+            <p>Welcome to my blog section! Here, I share thoughts and occasional rants about life, and something in between. Dive in and enjoy!</p>
+        </div>
+
         <table>
             <thead>
                 <tr>
@@ -52,45 +64,65 @@
 
         <div class="blog-list">
             <article class="blog" id="blog1">
-                <h2>Why I Love Python</h2>
+                <h2 class="h2">Why I Love Python</h2>
                 <p>It’s not like I’ve tried most programming languages, but I like Python the most from the ones I’ve tried. Of course, the reason is that I can do almost everything I need with Python. I usually write scripts for tasks that are bothersome, and so far, I’ve been able to accomplish nearly everything I’ve thought of with Python. All I need is some Googling and help from ChatGPT to fix a few parts.</p>
-                <p>Tags: <span>#Random</span> <span>#Python</span> <span>#ChatGPT</span></p>
+                <p class="tags">Tags: <span>#Random</span> <span>#Python</span> <span>#ChatGPT</span></p>
             </article>
 
             <article class="blog" id="blog2">
-                <h2>Rant #1</h2>
+                <h2 class="h2">Rant #1</h2>
                 <p>Sometimes I really think we’re not using all the tools we have available. Come on, let’s be real—anyone can go online and learn most skills, then make a living. Yet we still insist on sticking to the default path of going to schools. Don’t get me wrong, I think schools are very useful too, but we’re not making full use of the resources at hand.</p>
-                <p>Tags: <span>#Rant</span> <span>#Productivity</span></p>
+                <p class="tags">Tags: <span>#Rant</span> <span>#Productivity</span></p>
             </article>
 
             <article class="blog" id="blog3">
-                <h2>Don’t Stress</h2>
+                <h2 class="h2">Don’t Stress</h2>
                 <p>I don’t understand why some people overstress. Look back at the things that used to feel so intense, and now they’re just memories. Think about this: the things that make you stressed right now will also pass, just like the ones that came before. Focus on the present, and don’t let temporary challenges overwhelm you.</p>
-                <p>Tags: <span>#Advice</span> <span>#Positivity</span></p>
+                <p class="tags">Tags: <span>#Advice</span> <span>#Positivity</span></p>
             </article>
         </div>
     </main>
 
-    <footer>
+    <footer class="container-12 m-auto">
         <a href="home.html" class="logo-link">
-            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="100" alt="logo">
         </a>
-        <div class="footer-section">
-            <ul class="footer-contacts">
-                <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
-                <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a></li>
-                <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a></li>
-            </ul>
-        </div>
-        <div class="footer-nav">
-            <p class="footer-nav-title">Sitemap</p>
-            <ul class="footer-nav-list">
-                <li class="footer-nav-list-item"><a href="profile.html">Profile</a></li>
-                <li class="footer-nav-list-item"><a href="projects.html">Projects</a></li>
-                <li class="footer-nav-list-item"><a href="blog.html">Blogs</a></li>
-                <li class="footer-nav-list-item"><a href="contact.html">Contacts</a></li>
-            </ul>
+
+        <div class="container-10 m-auto footer-content">
+            <div class="container-4 m-auto">
+                <ul class="footer-contacts">
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/telegram-icon-light.png" alt="Telegram Icon"> 
+                            <a class="big-text" href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/mail-icon-light.png" alt="Email Icon"> 
+                            <a class="big-text" href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/github-icon-light.png" alt="Github Icon">
+                            <a class="big-text" href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-nav container-4 m-auto">
+                <p class="footer-nav-title h2">Sitemap</p>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item big-text"><a href="profile.html">Profile</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="projects.html">Projects</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="blog.html">Blogs</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

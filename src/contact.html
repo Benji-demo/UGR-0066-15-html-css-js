@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Contacts</title>
 </head>
 <body>
-    <header class="header">
-        <a href="home.html" class="logo-link">
-            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
-        </a>
-        <nav class="header-nav">
+    <header class="container-12 header">
+        <div class="container-7">
+            <a href="home.html" class="logo-container" >
+                <img class="logo header-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            </a>
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="header-nav container-5 m-auto">
             <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="home.html">Home</a></li>
                 <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
                 <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
                 <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
@@ -20,53 +29,156 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Contacts</h1>
-        <p>Feel free to reach out to me through any of the platforms below. Whether you have a question, collaboration idea, or just want to say hi, I'll do my best to get back to you promptly!</p>
-
+    <main class="container-10 m-auto">
+        <section class="contacts-intro">
+            <img id="contacts-pfp" class="profile-picture" src="/src/images/img1.jpg" width="300" alt="Profile picture">
+            <div class="contacts-content">
+                <h2 class="title">Contacts</h2>
+                <p>Feel free to reach out to me through any of the platforms below. Whether you have a question, collaboration idea, or just want to say hi, I'll do my best to get back to you promptly!</p>
+            </div>
+        </section>
+        
+        
         <section class="contact-list">
-            <h2>Contact List</h2>
-            <ul>
-                <li class="contact-list-item"><img src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
-                <li class="contact-list-item"><img src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a></li>
-                <li class="contact-list-item"><img src="/src/images/github-icon.png" height="30" alt="Github Icon"> <a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a></li>
-            </ul>
+            <h2 id="contact-list-h" class="h2">Contact List</h2>
+            <section class="contact-list-container">
+                <ul id="ul-1">
+                    <li class="contact-list-item">
+                        <div>
+                            <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79"><img src="/src/images/telegram-icon.png" height="45" alt="Telegram Icon"></a>
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com"><img src="/src/images/mail-icon.png" height="45" alt="Email Icon"></a>
+                        </div>
+                    </li>
+
+                    <li class="contact-list-item">
+                        <div>
+                            <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79"><img src="/src/images/telegram-icon.png" height="45" alt="Telegram Icon"></a>
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/"><img src="/src/images/github-icon.png" height="45" alt="Github Icon"></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="ul-2">
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a>
+                            
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a>
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/github-icon.png" height="30" alt="Github Icon"> <a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a>
+                        </div>
+                    </li>
+                </ul>
+                
+
+                <ul id="ul-3">
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a>
+                            
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a>
+                        </div>
+                    </li>
+                    <li class="contact-list-item">
+                        <div>
+                            <img src="/src/images/github-icon.png" height="30" alt="Github Icon"> <a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a>
+                        </div>
+                    </li>
+                </ul> 
+            </section>
         </section>
 
         <section class="contact-form">
-            <h2>Contact Form</h2>
+            <h2 class="h2">Contact Form</h2>
             <form>
-                <p><label for="name">Name</label>
-                <input name="name" type="text" id="name" placeholder="Enter your name" required></p>
-                <p><label for="email">Email</label>
-                <input name="email" type="email" id="email" placeholder="Enter your email" required></p>
-                <p><label for="message">Message</label></p>
-                <textarea name="message" id="message" placeholder="Write your message" maxlength=1000 required></textarea>
+                <div class="name-email">
+                    <div class="input-group container-5">
+                        <p>
+                            <label for="name">Name</label>
+                        </p>
+                            <input name="name" type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group container-5">
+                        <p>
+                            <label for="email">Email</label>
+                        </p>
+                        <input name="email" type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-group container-10 m-auto">
+                        <p><label for="message">Message</label></p>
+                        <textarea name="message" id="message" placeholder="Write your message" maxlength=1000 required></textarea>
+                    </div>
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="container-12 m-auto">
         <a href="home.html" class="logo-link">
-            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="100" alt="logo">
         </a>
-        <div class="footer-section">
-            <ul class="footer-contacts">
-                <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
-                <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a> </li>
-                <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a> </li>
-            </ul>
-        </div>
-        <div class="footer-nav">
-            <p class="footer-nav-title">Sitemap</p>
-            <ul class="footer-nav-list">
-                <li class="footer-nav-list-item"><a href="profile.html">Profile</a></li>
-                <li class="footer-nav-list-item"><a href="projects.html">Projects</a></li>
-                <li class="footer-nav-list-item"><a href="blog.html">Blogs</a></li>
-                <li class="footer-nav-list-item"><a href="contact.html">Contacts</a></li>
-            </ul>
+
+        <div class="container-10 m-auto footer-content">
+            <div class="container-4 m-auto">
+                <ul class="footer-contacts">
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/telegram-icon-light.png" alt="Telegram Icon"> 
+                            <a class="big-text" href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/mail-icon-light.png" alt="Email Icon"> 
+                            <a class="big-text" href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/github-icon-light.png" alt="Github Icon">
+                            <a class="big-text" href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-nav container-4 m-auto">
+                <p class="footer-nav-title h2">Sitemap</p>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item big-text"><a href="profile.html">Profile</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="projects.html">Projects</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="blog.html">Blogs</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

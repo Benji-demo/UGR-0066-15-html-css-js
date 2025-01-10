@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Projects</title>
 </head>
 <body>
-    <header class="header">
-        <a href="home.html" class="logo-link">
-            <img class="logo header-logo" src="/src/images/logo-light.jpg" width="80" alt="logo">
-        </a>
-        <nav class="header-nav">
+    <header class="container-12 header">
+        <div class="container-7">
+            <a href="home.html" class="logo-container" >
+                <img class="logo header-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            </a>
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="header-nav container-5 m-auto">
             <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="home.html">Home</a></li>
                 <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
                 <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
                 <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
@@ -19,65 +28,107 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
-        <h1>Projects</h1>
-
-        <div class="project-card" id="Image-to-icon">
-            <a href="projects/Img-to-ico.zip" download title="Download Image-to-icon Zip File"><h2 class="project-title">Image-to-icon</h2></a>
-            <p class="project-description">This project converts image files into icons. It was inspired by my need to organize movie images into icons. 
-                When online services imposed limitations on free conversions, I created this Python-based solution using the PIL library to automate the process. </p>
-                <p class="project-tag">Tags: <span>#Script</span> <span>#Python</span> <span>#PIL</span></p>
-            <a href="projects/Img-to-ico.zip" download title="Download Image-to-icon Zip File"><img src="images/ico_converter.jpg" alt="To Ico converter image" height="200"></a>
-        </div>
-        
-        <div class="project-card" id="Topup-from-image">
-            <a href="projects/Topup-from-image.zip" download title="Download Topup from image Zip File"><h2 class="project-title">Topup from image</h2></a>
-            <p class="project-description">This project uses OCR (Optical Character Recognition) to read and extract numeric information from an image, enabling users to top up their accounts automatically. Built with Tkinter, PyAutoGUI, and PyTesseract, it simplifies dialing card numbers directly from the script. If connected to your device via USB with debugging enabled, it uses ADB to handle automation.</p>
-            <p class="project-tag">Tags: <span>#Script</span> <span>#Python</span> <span>#PyTesseract(OCR)</span> <span>#PyAutoGUI</span> <span>#ADB</span></p>
-            <a href="projects/Topup-from-image.zip" download title="Download Topup from image Zip File"><img src="images/topup_img.jpg" alt="Topup prject cover" height="200"></a>
+        <div class="display-flex">
+            <h1 class="title text-center projects">Projects</h1>
+    
+            <div class="project-card container-5 prised-proj" id="old_sage">
+                <img src="images/old_sage.png" alt="Old Sage Drawing" height="400">
+                <div class="container-4">
+                    <h2 class="project-title h2">Drawing: Old Sage</h2>
+                    <p class="project-description">A drawing that I am proud of.</p>
+                    <p class="project-tag">Tags: <span>#Drawing</span> <span>#Digital</span> <span>#Old_Sage</span></p>
+                </div>
+            </div>
         </div>
 
-        <div class="project-card">
-            <a href="Videos/Day-024.mp4" target="_blank">
-                <h2 class="project-title">Drawing Time-elapse</h2>
-            </a>
-            <p class="project-description">Time-Elapse of a mecha drawing.</p>
-            <p class="project-tag">Tags: <span>#Drawing</span> <span>#Digital</span></p>
-            <a href="Videos/Day-024.mp4" target="_blank" class="video-link">
-                <img src="/src/images/day-024-thumbnail.png" alt="Video Thumbnail" height="300">
-                <div class="play-icon">&#9658;</div>
-            </a>
-        </div>
+        <section class="projects-content">
+            <div class="project-card container-5" id="old_sage-as-norm">
+                <img src="images/old_sage.png" alt="Old Sage Drawing" height="400">
+                <div class="container-4">
+                    <h2 class="project-title h2">Drawing: Old Sage</h2>
+                    <p class="project-description">A drawing that I am proud of.</p>
+                    <p class="project-tag">Tags: <span>#Drawing</span> <span>#Digital</span> <span>#Old_Sage</span></p>
+                </div>
+            </div>
+            <div class="project-card container-5" id="Image-to-icon">
+                <a href="projects/Img-to-ico.zip" download title="Download Image-to-icon Zip File"><img src="images/ico_converter.jpg" alt="To Ico converter image" ></a>
+                <div>
+                    <a href="projects/Img-to-ico.zip" download title="Download Image-to-icon Zip File"><h2 class="project-title h2">Image-to-icon</h2></a>
+                    <p class="project-description">This project converts image files into icons. It was inspired by my need to organize movie images into icons. 
+                        When online services imposed limitations on free conversions, I created this Python-based solution using the PIL library to automate the process. </p>
+                        <p class="project-tag">Tags: <span>#Script</span> <span>#Python</span> <span>#PIL</span></p>
+                </div>
+            </div>
+            
+            <div class="project-card container-5" id="Topup-from-image">
+                <a href="projects/Topup-from-image.zip" download title="Download Topup from image Zip File"><img src="images/topup_img.jpg" alt="Topup prject cover" height="200"></a>
+                <div>
+                    <a href="projects/Topup-from-image.zip" download title="Download Topup from image Zip File"><h2 class="project-title h2">Topup from image</h2></a>
+                    <p class="project-description">This project uses OCR (Optical Character Recognition) to read and extract numeric information from an image, enabling users to top up their accounts automatically. Built with Tkinter, PyAutoGUI, and PyTesseract, it simplifies dialing card numbers directly from the script. If connected to your device via USB with debugging enabled, it uses ADB to handle automation.</p>
+                    <p class="project-tag">Tags: <span>#Script</span> <span>#Python</span> <span>#PyTesseract(OCR)</span> <span>#PyAutoGUI</span> <span>#ADB</span></p>
+                </div>
+            </div>
+    
+            <div class="project-card container-5">
+                <div class="thumbnail-img" style="position: relative;">
+                    <a href="Videos/Day-024.mp4" target="_blank" class="video-link" style="display: block; position: relative;">
+                        <img src="/src/images/day-024-thumbnail.png" alt="Video Thumbnail" style="display: block;">
+                        <div class="play-icon" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 4rem; color: #262626; border-radius: 19px;">&#9658;</div>
+                    </a>
+                </div>
 
-        <div class="project-card" id="old_sage">
-            <h2 class="project-title">Drawing: Old Sage</h2>
-            <p class="project-description">A drawing that I am proud of.</p>
-            <p class="project-tag">Tags: <span>#Drawing</span> <span>#Digital</span> <span>#Old_Sage</span></p>
-            <img src="images/old_sage.jpg" alt="Old Sage Drawing" height="400">
-        </div>
+                <div>
+                    <a href="Videos/Day-024.mp4" target="_blank"><h2 class="project-title h2">Drawing Time-elapse</h2></a>
+                    <p class="project-description">Time-Elapse of a mecha drawing.</p>
+                    <p class="project-tag">Tags: <span>#Drawing</span> <span>#Digital</span></p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
-    <footer>
+    <footer class="container-12 m-auto">
         <a href="home.html" class="logo-link">
-            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="80" alt="logo">
+            <img class="logo footer-logo" src="/src/images/logo-dark.jpg" width="100" alt="logo">
         </a>
-        <div class="footer-section">
-            <ul class="footer-contacts">
-                <li><img class="icon" src="/src/images/telegram-icon.png" height="30" alt="Telegram Icon"> <a href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a></li>
-                <li><img class="icon" src="/src/images/mail-icon.png" height="30" alt="Email Icon"> <a href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a> </li>
-                <li><img class="icon" src="/src/images/github-icon.png" height="30" alt="Github Icon"><a href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a> </li>
-            </ul>
-        </div>
-        <div class="footer-nav">
-            <p class="footer-nav-title">Sitemap</p>
-            <ul class="footer-nav-list">
-                <li class="footer-nav-list-item"><a href="profile.html">Profile</a></li>
-                <li class="footer-nav-list-item"><a href="projects.html">Projects</a></li>
-                <li class="footer-nav-list-item"><a href="blog.html">Blogs</a></li>
-                <li class="footer-nav-list-item"><a href="contact.html">Contacts</a></li>
-            </ul>
+
+        <div class="container-10 m-auto footer-content">
+            <div class="container-4 m-auto">
+                <ul class="footer-contacts">
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/telegram-icon-light.png" alt="Telegram Icon"> 
+                            <a class="big-text" href="https://t.me/Mendokusai_79" target="_blank" title="@Mendokusai_79">Telegram</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/mail-icon-light.png" alt="Email Icon"> 
+                            <a class="big-text" href="mailto:login.new.world@gmail.com" title="login.new.world@gmail.com">Email</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="icon" src="/src/images/github-icon-light.png" alt="Github Icon">
+                            <a class="big-text" href="https://github.com/Benji-demo/" target="_blank" title="https://github.com/Benji-demo/">Github</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-nav container-4 m-auto">
+                <p class="footer-nav-title h2">Sitemap</p>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item big-text"><a href="profile.html">Profile</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="projects.html">Projects</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="blog.html">Blogs</a></li>
+                    <li class="footer-nav-list-item big-text"><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
