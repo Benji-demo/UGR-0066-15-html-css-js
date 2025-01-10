@@ -363,6 +363,10 @@ footer{
 
 /* ================  projects page  ====================== */
 
+#old_sage-as-norm{
+    display: none;
+}
+
 .projects{
     margin-top: 50px;
 }
@@ -484,7 +488,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: start;
     padding: 50px 20px;
     margin: 60px 0;
     gap: 10rem;
@@ -1037,7 +1041,192 @@ a:hover {
     
     /* phone landscape */
     @media (max-width: 768px) and (orientation: landscape) {
+        .container-5{
+            width: 83.33vw;
+        }
 
+        .title {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+        .header-nav {
+            display: none; 
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0px;
+            background-color: #f2f2f2;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 200px;
+            z-index: 10;
+        }
     
+        .header-nav-list-item {
+            padding: 0.5rem 1rem;
+        }
+    
+        .header-nav-list-item a {
+            text-decoration: none;
+            display: block; 
+            width: 100%;
+        }
+    
+        .header-nav-list-item a:hover {
+            background-color: #f2f2f2;
+        }
+    
+        .header-nav.show {
+            display: flex;
+        }
+    
+        .header-nav-list {
+            flex-direction: column;
+            padding: 10px 0;
+        }
+    
+        .hamburger-menu {
+            display: flex; 
+        }
+
+        .profile-section{
+            width: 83.33vw;
+            margin: auto;
+        }
+
+        .projects-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card{
+            display: flex;
+            width: 92.67vw;
+            align-items: center;
+        }
+
+        .project-card img{
+            width: 43.67vw;
+        }
+        
+        #Profile-def{
+            display: none;
+        }
+
+        .profile-intro{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .profile-picture{
+            width: 200px;
+        }
+
+        .profile-hobbies{
+            margin-left: 10rem;
+        }
+
+        
+        .profile-content{
+            text-align: center;
+        }
+
+        .display-flex{
+            display: flex;
+            flex-direction: column;
+            /* width: 83.33vw;
+            justify-content: center;
+            align-items: start;
+            margin-top: 4rem;
+            margin: 3rem; */
+        }
+        .display-flex .title{
+            width: 83.33vw;
+            margin: auto;
+        }
+
+        #old_sage-as-norm{
+            display: inline;
+        }
+
+        #old_sage{
+            display: none;
+        }
+
+        .project-tag{
+            display: block;
+            margin-top: 0.8rem;
+            color: #4d4d4d;
+        }
+
+        .prised-proj img{
+            width: 250px;
+            margin-top: 2rem;
+        }
+
+        .project-card{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            margin: auto;
+            width: 41.66vw ;
+        }
+
+        .project-card img{
+            width: 250px ;
+        }
+
+        .blog-intro{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .blog-list{
+            display:flex ;
+            flex-wrap: wrap;
+        }
+
+        .blog{
+            width: 41.66vw;
+            padding: 10px;
+        }
+
+        .contacts-content h2{
+            text-align: start;
+            width: 93.55vw;
+        }
+        #contact-list-h{
+            display: none;
+        }
+        #ul-1{
+            display: none;
+        }
+
+        #ul-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-list-container{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+        }
+
+        .contacts-intro{
+            padding: 0;
+        }
+
+        .contact-list-container{
+            margin-top: -3rem;
+            margin-left: -2.5rem;
+        }
     }
+
     
