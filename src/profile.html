@@ -16,6 +16,7 @@
         </div>
         <nav class="header-nav container-5 m-auto">
             <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="home.html">Home</a></li>
                 <li class="header-nav-list-item"><a href="profile.html">Profile</a></li>
                 <li class="header-nav-list-item"><a href="projects.html">Projects</a></li>
                 <li class="header-nav-list-item"><a href="blog.html">Blogs</a></li>
@@ -24,7 +25,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container-10 m-auto">
         <section class="profile-intro">
             <img class="profile-picture" src="/src/images/img1.jpg" width="300" alt="Profile picture">
             <div class="profile-content">
@@ -34,13 +35,13 @@
         </section>
 
             <div class="profile-body">
-                <section class="about-me container-5">
+                <section id="aboutme" class="about-me container-5">
                     <h2 class="h2">A bit about me</h2>
                     <p>I am a curious individual who loves exploring new technologies and applying them creatively. My journey in software engineering has been an exciting blend of technical learning and artistic expression. I believe that good design and functional technology go hand in hand.</p>
                     <p>Outside of coding, I spend time bringing ideas to life through drawing and animation, often merging these interests to visualize concepts and projects more effectively. Problem-solving and continuous learning are my driving forces.</p>
                 </section>
                 
-                <section class="profile-hobbies container-5">
+                <section id="hobbies" class="profile-hobbies container-5">
                     <h2 class="h2">Hobbies</h2>
                     <ul class="hobbies-list">
                         <li class="hobbies-list-item">Drawing</li>
@@ -51,9 +52,13 @@
             </div>
 
         <section class="download-resume container-10 m-auto">
-            <h1 class="h2">Download resume</h1>
-            <p>If you'd like to learn more about my professional journey and skills, feel free to download my resume below.</p>
-            <a class="button" href="resume/resume.pdf" download title="Download resume" class="button">Download</a>
+            <div>
+                <h1 class="h2">Download resume</h1>
+                <p>If you'd like to learn more about my professional journey and skills, feel free to download my resume below.</p>
+            </div>
+            <div>
+                <a class="button" href="resume/resume.pdf" download title="Download resume" class="button">Download</a>
+            </div>
         </section>
     </main>
 
@@ -97,5 +102,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

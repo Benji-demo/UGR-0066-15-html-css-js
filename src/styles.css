@@ -306,8 +306,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 60px;
-    margin-left: 8.33vw;
 }
 
 .profile-body p{
@@ -317,7 +315,6 @@ footer{
 .profile-hobbies{
     flex: 1;
     margin-left: 12vw;
-
 }
 
 .download-resume{
@@ -443,35 +440,6 @@ a:hover {
     color: #737373;
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-    
-    table {
-        border: 0;
-    }   
-
-    thead {
-        font-size: 1rem;
-    }
-
-    td {
-        /* display: block; */
-        text-align: left ;
-        font-size: 0.8em;
-        border-bottom: 1px solid #dddddd;
-        position: relative;
-    }
-
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 15px;
-        font-weight: bold;
-        text-align: left;
-    }
-}
 
 .blog {
     padding: 20px;
@@ -581,3 +549,184 @@ a:hover {
 .contact-form form button:hover {
     background-color: #737373;
 }
+
+
+/* Tablet - LandScape */
+@media (max-width: 1024px) {
+    /* ====================   Home   ========================= */
+        .container-7{
+            width: 50vw;
+        }
+    
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+    
+        .h2 {
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+        }
+    
+        .home-bg-image{
+        background-image: url("/src/images/img4-gray.jpg");
+        background-size:unset; 
+        background-position: right top; 
+    
+        min-height: 50vh; 
+        width: 100%; 
+        }
+    
+        .hero-section{
+            margin: auto;
+        }
+    
+        .profile-section {
+            padding: 10rem 2rem;
+            gap:5rem;
+        }
+    
+    
+        #proj-2 {
+            order: 1;
+        }
+    
+        #proj-1 {
+            order: 2;
+        }
+    
+        #proj-3{
+            display: none;
+        }
+    
+        #blog-3{
+            display: none;
+        }
+    
+        .blogs-container {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            text-align:start;
+        }
+        
+        .blogs-container div {
+            padding: 30px;
+        }
+    
+    /* ================== Profile ========================== */
+    
+        #aboutme{
+            order: 2;
+        }
+    
+        #hobbies{
+            order: 1;
+        }
+    
+        .profile-hobbies{
+            margin-left: 0;
+        }
+    
+        .download-resume{
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            width: 70vw;
+        }
+    
+        .download-resume .button{
+            margin-left: 1rem;
+        }
+    
+    /* ================== Projects ========================== */
+        .display-flex{
+            display: flex;
+            margin: auto;
+            width: 83.33vw;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4rem;
+        }
+    
+    /* ===================== Blogs ======================= */
+    .blog-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .blog {
+        padding: 20px;
+        width: 41.67vw;
+    }
+    
+    /* ===================== Contacts ======================= */
+    #contacts-pfp{
+        display: none;
+    }
+}
+
+
+/* Tablet - Protrate */
+@media (max-width: 768px) {
+    /* .hero-section {
+        padding: 100px 20px;
+    }
+
+    .profile-section, .projects-section, .contacts-intro {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .projects-container, .blogs-container {
+        flex-direction: column;
+    }
+
+    .project-card, .blogs-container div {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    } */
+}
+
+    /* Phone - Portrait  */
+    @media (max-width: 390px) {
+        /* .hero-title {
+            font-size: 2rem;
+        }
+    
+        .hero-description, .big-text {
+            font-size: 1rem;
+        }
+    
+        .title {
+            font-size: 2rem;
+        }
+    
+        .h2 {
+            font-size: 1.5rem;
+        }
+    
+        .profile-content {
+            width: 100%;
+        }
+    
+        .contact-list-item {
+            font-size: 0.9em;
+        }
+    
+        .contact-form form button {
+            width: 100%;
+        } */
+    }
+    
+    /* phone landscape */
+    @media (max-width: 768px) and (orientation: landscape) {
+        /* Your styles for phone landscape go here */
+    
+    }
+    
