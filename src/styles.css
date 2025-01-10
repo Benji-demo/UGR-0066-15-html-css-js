@@ -24,6 +24,15 @@ section{
     /* margin: auto; */
 }
 
+.container-7{
+    width:58.33vw ;
+    /* margin: auto; */
+}
+.container-6{
+    width:50vw ;
+    /* margin: auto; */
+}
+
 .container-5{
     width: 41.67vw;
     /* margin: auto; */
@@ -108,9 +117,6 @@ section{
     background-color: #999999;
 }
 
-.logo-container {
-    flex: 0 0 70vw;
-}
 
 .logo-link{
     display: inline-flex;
