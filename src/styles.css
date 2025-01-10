@@ -469,6 +469,10 @@ a:hover {
     padding: 20px 0;
 }
 
+.tags{
+    color: #4d4d4d;
+}
+
 
 /* ================  contact page  ====================== */
 
@@ -688,6 +692,10 @@ a:hover {
     #contacts-pfp{
         display: none;
     }
+
+    .tags{
+        color: #4d4d4d;
+    }
 }
 
 
@@ -697,7 +705,9 @@ a:hover {
         width: 83.33vw;
     }
 
-    
+    .container-7{
+        width:24vw;
+    }
 
     #hero-header-nav {
         display: none; 
@@ -735,10 +745,11 @@ a:hover {
         padding: 10px 0;
     }
 
-    .hamburger-menu {
+    #hero-header .hamburger-menu {
         display: flex; 
     }
     
+
     .hero-section{
         width: 66.64vw;
         margin: auto;
@@ -835,54 +846,198 @@ a:hover {
         justify-content: center;
         align-items: center;
     }
+
+    .tags{
+        color: #4d4d4d;
+    }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
     /* Phone - Portrait  */
-    @media (max-width: 390px) {
-        /* .hero-title {
-            font-size: 2rem;
+    @media (max-width: 480px) {
+        .container-5{
+            width: 83.33vw;
         }
-    
-        .hero-description, .big-text {
-            font-size: 1rem;
-        }
-    
+
         .title {
-            font-size: 2rem;
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+        .header-nav {
+            display: none; 
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0px;
+            background-color: #f2f2f2;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 200px;
+            z-index: 10;
         }
     
-        .h2 {
-            font-size: 1.5rem;
+        .header-nav-list-item {
+            padding: 0.5rem 1rem;
         }
     
-        .profile-content {
+        .header-nav-list-item a {
+            text-decoration: none;
+            display: block; 
             width: 100%;
         }
     
-        .contact-list-item {
-            font-size: 0.9em;
+        .header-nav-list-item a:hover {
+            background-color: #f2f2f2;
         }
     
-        .contact-form form button {
-            width: 100%;
-        } */
+        .header-nav.show {
+            display: flex;
+        }
+    
+        .header-nav-list {
+            flex-direction: column;
+            padding: 10px 0;
+        }
+    
+        .hamburger-menu {
+            display: flex; 
+        }
+
+        .hero-section{
+            width: 83.33vw;
+            margin: auto;
+        }
+
+        .profile-section{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .projects-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card{
+            display: flex;
+            width: 92.67vw;
+        }
+
+        .project-card p{
+            margin-left: 0.4rem;
+        } 
+
+        .blogs-container{
+            padding: 0;
+        }
+
+        
+        #aboutme{
+            order: 2;
+        }
+    
+        #hobbies{
+            order: 1;
+        }
+        #Profile-def{
+            display: none;
+        }
+        .profile-intro{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .profile-picture{
+            width: 130px;
+        }
+        
+        .profile-content{
+            width: 230px;
+        }
+
+        #hobbies{
+            margin-left: 5rem;
+            
+        }
+
+        
+    
+        .profile-hobbies{
+            margin-left: 0;
+        }
+
+        .display-flex{
+            display: flex;
+            flex-direction: column;
+            width: 83.33vw;
+            justify-content: center;
+            align-items: start;
+            margin-top: 4rem;
+            margin: 3rem;
+        }
+
+        .prised-proj{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+            margin: 0;
+        }
+
+        .project-card{
+            padding: 5px;
+            margin-bottom: 2rem;
+        }
+        .project-card img{
+            width: 130px;
+        }
+
+        .blog-intro{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tags{
+            color: #4d4d4d;
+        }
+
+        
+        .contacts-content h2{
+            text-align: start;
+            width: 93.55vw;
+        }
+        #contact-list-h{
+            display: none;
+        }
+        #ul-1{
+            display: none;
+        }
+
+        #ul-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-list-container{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+        }
+
+        .contacts-intro{
+            padding: 0;
+        }
+
+        .contact-list-container{
+            margin-top: -3rem;
+            margin-left: -2.5rem;
+        }
     }
     
     /* phone landscape */
     @media (max-width: 768px) and (orientation: landscape) {
-        /* Your styles for phone landscape go here */
+
     
     }
     

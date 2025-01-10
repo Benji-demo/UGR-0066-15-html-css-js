@@ -1,28 +1,28 @@
-// const hamburgerMenu = document.querySelector('.hamburger-menu');
-// const headerNav = document.querySelector('.header-nav');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const headerNav = document.querySelector('.header-nav');
 
-// // Add a click event listener to toggle the menu visibility
-// hamburgerMenu.addEventListener('click', () => {
-//     // Check if the menu is currently shown
-//     if (headerNav.classList.contains('show')) {
-//         headerNav.classList.remove('show'); // Hide the menu
-//     } else {
-//         headerNav.classList.add('show'); // Show the menu
-//     }
-// });
+// Add a click event listener to toggle the menu visibility
+hamburgerMenu.addEventListener('click', () => {
+    // Check if the menu is currently shown
+    if (headerNav.classList.contains('show')) {
+        headerNav.classList.remove('show'); // Hide the menu
+    } else {
+        headerNav.classList.add('show'); // Show the menu
+    }
+});
 
 
-// document.addEventListener('click', (event) => {
-//     const isClickInside = hamburgerMenu.contains(event.target) || headerNav.contains(event.target);
-//     if (!isClickInside) {
-//         headerNav.classList.remove('show'); // Hide the menu
-//     }
-// });
+document.addEventListener('click', (event) => {
+    const isClickInside = hamburgerMenu.contains(event.target) || headerNav.contains(event.target);
+    if (!isClickInside) {
+        headerNav.classList.remove('show'); // Hide the menu
+    }
+});
 
-// document.querySelector('.hamburger-menu').addEventListener('click', function () {
-//     const nav = document.getElementById('hero-header-nav');
-//     nav.classList.toggle('show');
-// });
+document.querySelector('.hamburger-menu').addEventListener('click', function () {
+    const nav = document.getElementById('hero-header-nav');
+    nav.classList.toggle('show');
+});
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,13 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add click event listener to toggle the menu visibility
     hamburgerMenu.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent event bubbling
-
-        // Toggle the 'show' class to show/hide the nav
+        event.stopPropagation(); 
         headerNav.classList.toggle('show');
     });
 
-    // Close the menu if clicking outside the hamburger menu or nav
     document.addEventListener('click', (event) => {
         const isClickInside = hamburgerMenu.contains(event.target) || headerNav.contains(event.target);
         if (!isClickInside) {
