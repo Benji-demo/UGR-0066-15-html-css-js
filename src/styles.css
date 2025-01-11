@@ -93,7 +93,7 @@ section{
 
 
 .home-bg-image { 
-    background-image: url("/src/images/img4-gray.jpg");
+    background-image: url("./images/img4-gray.jpg");
     background-size: cover; 
     background-position: right top; 
     background-repeat: no-repeat; 
